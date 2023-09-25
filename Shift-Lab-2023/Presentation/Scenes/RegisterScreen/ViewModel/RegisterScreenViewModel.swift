@@ -50,7 +50,7 @@ final class RegisterScreenViewModelImpl: RegisterScreenViewModel {
     // MARK: - Input
 
     public func goToEventsScreen() {
-
+        sceneDelegate?.goToEventsScreen()
     }
 
     public func updateName(_ name: String) {

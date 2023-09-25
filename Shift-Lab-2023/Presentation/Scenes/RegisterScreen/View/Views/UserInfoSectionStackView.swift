@@ -72,7 +72,7 @@ final class UserInfoSectionStackView: UIStackView {
 
     private func configure() {
         axis = .vertical
-        spacing = 6
+        spacing = Constants.userInfoSectionStackViewSpacing
     }
 
     private func setupViews() {
@@ -92,4 +92,12 @@ final class UserInfoSectionStackView: UIStackView {
         }
     }
 
+}
+
+// MARK: - Constants
+
+private extension UserInfoSectionStackView {
+    enum Constants {
+        static let userInfoSectionStackViewSpacing: CGFloat = 6
+    }
 }

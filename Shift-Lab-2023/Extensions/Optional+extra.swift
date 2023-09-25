@@ -14,3 +14,16 @@ extension Optional where Wrapped == String {
         return self?.isEmpty ?? true
     }
 }
+
+extension Optional where Wrapped == Int {
+    var orZero: Int {
+        return self ?? 0
+    }
+}
+
+
+extension Optional {
+    func orEmptyArray<T>() -> [T] where Wrapped == [T] {
+        return self ?? []
+    }
+}

@@ -14,17 +14,25 @@ final class RegisterInfoStackView: UIStackView {
     private lazy var nameTextField: UserInfoSectionStackView = {
         $0.setReturnKeyType(.next)
         return $0
-    }(UserInfoSectionStackView(isSecured: false, sectionLabelText: "Имя", placeholderText: "Введите ваше имя"))
+    }(UserInfoSectionStackView(
+        isSecured: false,
+        sectionLabelText: R.string.localizable.section_name(),
+        placeholderText: R.string.localizable.section_name_placeholder()
+    ))
 
     private lazy var surnameTextField: UserInfoSectionStackView = {
         $0.setReturnKeyType(.next)
         return $0
-    }(UserInfoSectionStackView(isSecured: false, sectionLabelText: "Фамилия", placeholderText: "Введите вашу фамилию"))
+    }(UserInfoSectionStackView(
+        isSecured: false,
+        sectionLabelText: R.string.localizable.section_surname(),
+        placeholderText: R.string.localizable.section_surname_placeholder()
+    ))
 
     private lazy var dateOfBirthLabel: UILabel = {
         $0.font = AppFonts.poppins13Medium
         $0.textColor = AppColors.coal
-        $0.text = "Дата рождения"
+        $0.text = R.string.localizable.section_date_of_birth()
         return $0
     }(UILabel())
 
@@ -35,12 +43,20 @@ final class RegisterInfoStackView: UIStackView {
     private lazy var passwordTextField: UserInfoSectionStackView = {
         $0.setReturnKeyType(.next)
         return $0
-    }(UserInfoSectionStackView(isSecured: true, sectionLabelText: "Пароль", placeholderText: "Введите ваш пароль"))
+    }(UserInfoSectionStackView(
+        isSecured: true,
+        sectionLabelText: R.string.localizable.section_password(),
+        placeholderText: R.string.localizable.section_password_placeholder()
+    ))
 
     private lazy var confirmPasswordTextField: UserInfoSectionStackView = {
         $0.setReturnKeyType(.done)
         return $0
-    }(UserInfoSectionStackView(isSecured: true, sectionLabelText: "Подтвердите пароль", placeholderText: "Введите ваш пароль повторно"))
+    }(UserInfoSectionStackView(
+        isSecured: true,
+        sectionLabelText: R.string.localizable.section_confirm_password(),
+        placeholderText: R.string.localizable.section_confirm_password_placeholder()
+    ))
 
     // MARK: - Public Properties
 
@@ -79,7 +95,7 @@ final class RegisterInfoStackView: UIStackView {
 
     private func configure() {
         axis = .vertical
-        spacing = 20
+        spacing = Constants.registerInfoStackViewSpacing
     }
 
     private func setupViews() {
@@ -91,7 +107,7 @@ final class RegisterInfoStackView: UIStackView {
             passwordTextField,
             confirmPasswordTextField
         )
-        setCustomSpacing(6, after: dateOfBirthLabel)
+        setCustomSpacing(Constants.dateOfBirthLabelCustomSpacing, after: dateOfBirthLabel)
     }
 
     private func setupBindings() {
@@ -128,4 +144,13 @@ final class RegisterInfoStackView: UIStackView {
         }
     }
 
+}
+
+// MARK: - Constants
+
+private extension RegisterInfoStackView {
+    enum Constants {
+        static let registerInfoStackViewSpacing: CGFloat = 20
+        static let dateOfBirthLabelCustomSpacing: CGFloat = 6
+    }
 }

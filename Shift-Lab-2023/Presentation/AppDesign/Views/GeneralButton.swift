@@ -38,6 +38,13 @@ final class GeneralButton: UIButton {
         setTitleColor(AppColors.white, for: .normal)
     }
 
+    public func configureLightGreenFilledButton() {
+        layer.backgroundColor = AppColors.softGreen.cgColor
+        layer.cornerRadius = Constants.cornerRadius
+        contentEdgeInsets = Constants.contentEdgeInsets
+        setTitleColor(AppColors.brightGreen, for: .normal)
+    }
+
     // MARK: - Private Methods
 
     private func setup() {

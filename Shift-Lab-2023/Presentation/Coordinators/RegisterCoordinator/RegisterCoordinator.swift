@@ -11,7 +11,7 @@ final class RegisterCoordinator: BaseNavigationCoordinator {
 
     // MARK: - Public Properties
 
-    public var onRouteToMainFlow: ((RegisterCoordinator) -> Void)?
+    public var onRouteToEventsFlow: ((RegisterCoordinator) -> Void)?
 
     // MARK: - Init
 
@@ -38,6 +38,6 @@ final class RegisterCoordinator: BaseNavigationCoordinator {
 
 extension RegisterCoordinator: RegisterScreenSceneDelegate {
     func goToEventsScreen() {
-        onRouteToMainFlow?(self)
+        onRouteToEventsFlow?(self)
     }
 }

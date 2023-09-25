@@ -45,7 +45,7 @@ final class RegisterScreenViewController: UIViewController {
 
     private func setupBindings() {
         viewModel.error.bind { [weak self] error in
-            self?.showError(error, "Ошибка регистрации")
+            self?.showAlert(error, R.string.localizable.register_error())
         }
 
         customView.onNameTextChanged = { [weak self] text in
