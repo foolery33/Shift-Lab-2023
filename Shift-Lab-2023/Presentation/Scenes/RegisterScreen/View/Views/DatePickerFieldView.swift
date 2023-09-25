@@ -12,7 +12,7 @@ final class DatePickerFieldView: UIView {
     // MARK: - Views
 
     private let datePickerLabel: UILabel = {
-        $0.text = "Выберите дату рождения"
+        $0.text = R.string.localizable.section_date_of_birth_placeholder()
         $0.font = AppFonts.poppins14Regular
         $0.textColor = AppColors.softGray
         return $0
@@ -31,7 +31,7 @@ final class DatePickerFieldView: UIView {
     public var onDatePickerValueDidChange: ((Date) -> String)?
 
     public var dateWasChosen: Bool {
-        datePickerLabel.text == "Выберите дату рождения" ? false : true
+        datePickerLabel.text == R.string.localizable.section_date_of_birth_placeholder() ? false : true
     }
 
     // MARK: - Inits
@@ -55,8 +55,8 @@ final class DatePickerFieldView: UIView {
     }
 
     private func configure() {
-        layer.cornerRadius = 4
-        layer.borderWidth = 1
+        layer.cornerRadius = Constants.datePickerFieldViewCornerRadius
+        layer.borderWidth = Constants.datePickerFieldViewBorderWidth
         layer.borderColor = AppColors.softGray.cgColor
     }
 
@@ -69,12 +69,12 @@ final class DatePickerFieldView: UIView {
 
     private func configureConstraints() {
         datePickerLabel.snp.makeConstraints { make in
-            make.leading.equalToSuperview().inset(16)
-            make.verticalEdges.equalToSuperview().inset(13)
+            make.leading.equalToSuperview().inset(AppConstants.spacingMedium)
+            make.verticalEdges.equalToSuperview().inset(Constants.datePickerLabelVerticalInsets)
         }
 
         datePicker.snp.makeConstraints { make in
-            make.trailing.equalToSuperview().inset(16)
+            make.trailing.equalToSuperview().inset(AppConstants.spacingMedium)
             make.centerY.equalTo(datePickerLabel)
         }
     }
@@ -95,4 +95,14 @@ final class DatePickerFieldView: UIView {
         datePickerLabel.textColor = AppColors.coal
     }
 
+}
+
+// MARK: - Constants
+
+private extension DatePickerFieldView {
+    enum Constants {
+        static let datePickerLabelVerticalInsets = 13
+        static let datePickerFieldViewCornerRadius: CGFloat = 4
+        static let datePickerFieldViewBorderWidth: CGFloat = 1
+    }
 }

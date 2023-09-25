@@ -12,6 +12,32 @@
 		84C15C4C2ABFF29F0035C6AC /* UserInfoStorageImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C4B2ABFF29F0035C6AC /* UserInfoStorageImpl.swift */; };
 		84C15C4E2ABFF33C0035C6AC /* StorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C4D2ABFF33C0035C6AC /* StorageKey.swift */; };
 		84C15C512ABFF4450035C6AC /* SaveUserNameUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C502ABFF4450035C6AC /* SaveUserNameUseCase.swift */; };
+		84C15C572ABFF8A30035C6AC /* EventsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C562ABFF8A30035C6AC /* EventsScreenViewModel.swift */; };
+		84C15C592ABFF95C0035C6AC /* EventsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C582ABFF95C0035C6AC /* EventsScreenViewController.swift */; };
+		84C15C5B2ABFF9960035C6AC /* EventsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C5A2ABFF9960035C6AC /* EventsScreenView.swift */; };
+		84C15C5F2AC03C690035C6AC /* EventsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C5E2AC03C690035C6AC /* EventsCoordinator.swift */; };
+		84C15C622AC03CC60035C6AC /* EventsScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C612AC03CC60035C6AC /* EventsScreenAssembly.swift */; };
+		84C15C652AC043370035C6AC /* ContestsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C642AC043370035C6AC /* ContestsTableViewCell.swift */; };
+		84C15C692AC04C7D0035C6AC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84C15C682AC04C7D0035C6AC /* Alamofire */; };
+		84C15C6E2AC04CB40035C6AC /* ContestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C6D2AC04CB40035C6AC /* ContestService.swift */; };
+		84C15C732AC04D210035C6AC /* ContestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C722AC04D210035C6AC /* ContestResponse.swift */; };
+		84C15C782AC04DD40035C6AC /* ContestServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C772AC04DD40035C6AC /* ContestServiceImpl.swift */; };
+		84C15C7C2AC04E230035C6AC /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C7B2AC04E230035C6AC /* NetworkServiceError.swift */; };
+		84C15C7E2AC04E370035C6AC /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C7D2AC04E370035C6AC /* BaseNetworkService.swift */; };
+		84C15C802AC04E5E0035C6AC /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C7F2AC04E5E0035C6AC /* HTTPStatusCode.swift */; };
+		84C15C832AC04E8C0035C6AC /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C822AC04E8C0035C6AC /* URLFactory.swift */; };
+		84C15C882AC051250035C6AC /* ContestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C872AC051250035C6AC /* ContestRepository.swift */; };
+		84C15C8D2AC0514C0035C6AC /* ContestDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C8C2AC0514C0035C6AC /* ContestDomain.swift */; };
+		84C15C902AC051750035C6AC /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C8F2AC051750035C6AC /* Mapper.swift */; };
+		84C15C932AC0519E0035C6AC /* ContestMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C922AC0519E0035C6AC /* ContestMapper.swift */; };
+		84C15C982AC052370035C6AC /* ContestRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C972AC052370035C6AC /* ContestRepositoryImpl.swift */; };
+		84C15C9B2AC0534D0035C6AC /* RepositoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C9A2AC0534D0035C6AC /* RepositoryProvider.swift */; };
+		84C15C9F2AC053930035C6AC /* NetworkServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15C9E2AC053930035C6AC /* NetworkServiceProvider.swift */; };
+		84C15CA12AC054350035C6AC /* GetContestsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15CA02AC054350035C6AC /* GetContestsUseCase.swift */; };
+		84C15CA62AC0589A0035C6AC /* ReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15CA52AC0589A0035C6AC /* ReuseIdentifiable.swift */; };
+		84C15CA92AC06C9F0035C6AC /* GetDateRangeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15CA82AC06C9F0035C6AC /* GetDateRangeUseCase.swift */; };
+		84C15CAC2AC06CD70035C6AC /* GetTimeRangeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15CAB2AC06CD70035C6AC /* GetTimeRangeUseCase.swift */; };
+		84C15CAF2AC074FD0035C6AC /* GetUserNameUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C15CAE2AC074FC0035C6AC /* GetUserNameUseCase.swift */; };
 		84C1B84E2ABD30EF00C45773 /* GeneralTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1B84D2ABD30EF00C45773 /* GeneralTextField.swift */; };
 		84C1B8522ABD358300C45773 /* RegisterInfoStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1B8512ABD358300C45773 /* RegisterInfoStackView.swift */; };
 		84C1B8552ABD412C00C45773 /* UserInfoSectionStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1B8542ABD412C00C45773 /* UserInfoSectionStackView.swift */; };
@@ -32,6 +58,9 @@
 		84DD67542ABF706B00D2AFF3 /* PasswordsEqualityValidationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD67532ABF706B00D2AFF3 /* PasswordsEqualityValidationUseCase.swift */; };
 		84DD67562ABF70E300D2AFF3 /* GetRegisterErrorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD67552ABF70E300D2AFF3 /* GetRegisterErrorUseCase.swift */; };
 		84DD675C2ABF730200D2AFF3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84DD675B2ABF730200D2AFF3 /* Localizable.strings */; };
+		84E169EE2AC15A2300F23E7C /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E169ED2AC15A2300F23E7C /* AppConstants.swift */; };
+		84E169F12AC15FB900F23E7C /* UIViewController+loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E169F02AC15FB900F23E7C /* UIViewController+loader.swift */; };
+		84E169F42AC15FD300F23E7C /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E169F32AC15FD300F23E7C /* LoaderView.swift */; };
 		84EF82442ABC599800928693 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF82432ABC599800928693 /* Coordinator.swift */; };
 		84EF82472ABC59AF00928693 /* BaseNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF82462ABC59AF00928693 /* BaseNavigationCoordinator.swift */; };
 		84EF824A2ABC59D400928693 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF82492ABC59D400928693 /* AppCoordinator.swift */; };
@@ -61,6 +90,31 @@
 		84C15C4B2ABFF29F0035C6AC /* UserInfoStorageImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoStorageImpl.swift; sourceTree = "<group>"; };
 		84C15C4D2ABFF33C0035C6AC /* StorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageKey.swift; sourceTree = "<group>"; };
 		84C15C502ABFF4450035C6AC /* SaveUserNameUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserNameUseCase.swift; sourceTree = "<group>"; };
+		84C15C562ABFF8A30035C6AC /* EventsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsScreenViewModel.swift; sourceTree = "<group>"; };
+		84C15C582ABFF95C0035C6AC /* EventsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsScreenViewController.swift; sourceTree = "<group>"; };
+		84C15C5A2ABFF9960035C6AC /* EventsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsScreenView.swift; sourceTree = "<group>"; };
+		84C15C5E2AC03C690035C6AC /* EventsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCoordinator.swift; sourceTree = "<group>"; };
+		84C15C612AC03CC60035C6AC /* EventsScreenAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsScreenAssembly.swift; sourceTree = "<group>"; };
+		84C15C642AC043370035C6AC /* ContestsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestsTableViewCell.swift; sourceTree = "<group>"; };
+		84C15C6D2AC04CB40035C6AC /* ContestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestService.swift; sourceTree = "<group>"; };
+		84C15C722AC04D210035C6AC /* ContestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestResponse.swift; sourceTree = "<group>"; };
+		84C15C772AC04DD40035C6AC /* ContestServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestServiceImpl.swift; sourceTree = "<group>"; };
+		84C15C7B2AC04E230035C6AC /* NetworkServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
+		84C15C7D2AC04E370035C6AC /* BaseNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkService.swift; sourceTree = "<group>"; };
+		84C15C7F2AC04E5E0035C6AC /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		84C15C822AC04E8C0035C6AC /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
+		84C15C872AC051250035C6AC /* ContestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestRepository.swift; sourceTree = "<group>"; };
+		84C15C8C2AC0514C0035C6AC /* ContestDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestDomain.swift; sourceTree = "<group>"; };
+		84C15C8F2AC051750035C6AC /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		84C15C922AC0519E0035C6AC /* ContestMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestMapper.swift; sourceTree = "<group>"; };
+		84C15C972AC052370035C6AC /* ContestRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestRepositoryImpl.swift; sourceTree = "<group>"; };
+		84C15C9A2AC0534D0035C6AC /* RepositoryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProvider.swift; sourceTree = "<group>"; };
+		84C15C9E2AC053930035C6AC /* NetworkServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProvider.swift; sourceTree = "<group>"; };
+		84C15CA02AC054350035C6AC /* GetContestsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetContestsUseCase.swift; sourceTree = "<group>"; };
+		84C15CA52AC0589A0035C6AC /* ReuseIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiable.swift; sourceTree = "<group>"; };
+		84C15CA82AC06C9F0035C6AC /* GetDateRangeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDateRangeUseCase.swift; sourceTree = "<group>"; };
+		84C15CAB2AC06CD70035C6AC /* GetTimeRangeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTimeRangeUseCase.swift; sourceTree = "<group>"; };
+		84C15CAE2AC074FC0035C6AC /* GetUserNameUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserNameUseCase.swift; sourceTree = "<group>"; };
 		84C1B84D2ABD30EF00C45773 /* GeneralTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTextField.swift; sourceTree = "<group>"; };
 		84C1B8512ABD358300C45773 /* RegisterInfoStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInfoStackView.swift; sourceTree = "<group>"; };
 		84C1B8542ABD412C00C45773 /* UserInfoSectionStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoSectionStackView.swift; sourceTree = "<group>"; };
@@ -83,6 +137,9 @@
 		84DD67532ABF706B00D2AFF3 /* PasswordsEqualityValidationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsEqualityValidationUseCase.swift; sourceTree = "<group>"; };
 		84DD67552ABF70E300D2AFF3 /* GetRegisterErrorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRegisterErrorUseCase.swift; sourceTree = "<group>"; };
 		84DD675B2ABF730200D2AFF3 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		84E169ED2AC15A2300F23E7C /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		84E169F02AC15FB900F23E7C /* UIViewController+loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+loader.swift"; sourceTree = "<group>"; };
+		84E169F32AC15FD300F23E7C /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		84EF82432ABC599800928693 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		84EF82462ABC59AF00928693 /* BaseNavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationCoordinator.swift; sourceTree = "<group>"; };
 		84EF82492ABC59D400928693 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -109,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C15C692AC04C7D0035C6AC /* Alamofire in Frameworks */,
 				84EF82632ABC61A200928693 /* SnapKit in Frameworks */,
 				84EF82692ABC666A00928693 /* RswiftLibrary in Frameworks */,
 			);
@@ -120,6 +178,9 @@
 		84C15C432ABFF1900035C6AC /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				84C15C8E2AC051670035C6AC /* Mappers */,
+				84C15C952AC052120035C6AC /* Repositories */,
+				84C15C6F2AC04CF60035C6AC /* Network */,
 				84C15C442ABFF1970035C6AC /* Persistent */,
 			);
 			path = Data;
@@ -152,9 +213,199 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		84C15C532ABFF8760035C6AC /* EventsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C552ABFF8970035C6AC /* View */,
+				84C15C542ABFF8910035C6AC /* ViewModel */,
+				84C15C612AC03CC60035C6AC /* EventsScreenAssembly.swift */,
+			);
+			path = EventsScreen;
+			sourceTree = "<group>";
+		};
+		84C15C542ABFF8910035C6AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C562ABFF8A30035C6AC /* EventsScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84C15C552ABFF8970035C6AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C632AC043240035C6AC /* Views */,
+				84C15C582ABFF95C0035C6AC /* EventsScreenViewController.swift */,
+				84C15C5A2ABFF9960035C6AC /* EventsScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84C15C5D2AC03C5D0035C6AC /* EventsCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C5E2AC03C690035C6AC /* EventsCoordinator.swift */,
+			);
+			path = EventsCoordinator;
+			sourceTree = "<group>";
+		};
+		84C15C632AC043240035C6AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C642AC043370035C6AC /* ContestsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84C15C6B2AC04C9C0035C6AC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C852AC051140035C6AC /* Repositories */,
+				84C15C6C2AC04CA30035C6AC /* Network */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		84C15C6C2AC04CA30035C6AC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C6D2AC04CB40035C6AC /* ContestService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		84C15C6F2AC04CF60035C6AC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C792AC04E090035C6AC /* Base */,
+				84C15C742AC04DBB0035C6AC /* Services */,
+				84C15C702AC04CFB0035C6AC /* Models */,
+				84C15C9E2AC053930035C6AC /* NetworkServiceProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		84C15C702AC04CFB0035C6AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C712AC04CFF0035C6AC /* Contest */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C15C712AC04CFF0035C6AC /* Contest */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C752AC04DC50035C6AC /* Response */,
+			);
+			path = Contest;
+			sourceTree = "<group>";
+		};
+		84C15C742AC04DBB0035C6AC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C772AC04DD40035C6AC /* ContestServiceImpl.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84C15C752AC04DC50035C6AC /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C722AC04D210035C6AC /* ContestResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		84C15C792AC04E090035C6AC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C7A2AC04E160035C6AC /* Error */,
+				84C15C7D2AC04E370035C6AC /* BaseNetworkService.swift */,
+				84C15C7F2AC04E5E0035C6AC /* HTTPStatusCode.swift */,
+				84C15C822AC04E8C0035C6AC /* URLFactory.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		84C15C7A2AC04E160035C6AC /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C7B2AC04E230035C6AC /* NetworkServiceError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		84C15C852AC051140035C6AC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C862AC0511D0035C6AC /* Contest */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		84C15C862AC0511D0035C6AC /* Contest */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C872AC051250035C6AC /* ContestRepository.swift */,
+			);
+			path = Contest;
+			sourceTree = "<group>";
+		};
+		84C15C8A2AC0513B0035C6AC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C8B2AC051420035C6AC /* Contest */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		84C15C8B2AC051420035C6AC /* Contest */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C8C2AC0514C0035C6AC /* ContestDomain.swift */,
+			);
+			path = Contest;
+			sourceTree = "<group>";
+		};
+		84C15C8E2AC051670035C6AC /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C912AC0518B0035C6AC /* Contest */,
+				84C15C8F2AC051750035C6AC /* Mapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		84C15C912AC0518B0035C6AC /* Contest */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C922AC0519E0035C6AC /* ContestMapper.swift */,
+			);
+			path = Contest;
+			sourceTree = "<group>";
+		};
+		84C15C952AC052120035C6AC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C962AC0522B0035C6AC /* Contest */,
+				84C15C9A2AC0534D0035C6AC /* RepositoryProvider.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		84C15C962AC0522B0035C6AC /* Contest */ = {
+			isa = PBXGroup;
+			children = (
+				84C15C972AC052370035C6AC /* ContestRepositoryImpl.swift */,
+			);
+			path = Contest;
+			sourceTree = "<group>";
+		};
 		84C1B84B2ABD30D200C45773 /* AppDesign */ = {
 			isa = PBXGroup;
 			children = (
+				84E169EC2AC15A1A00F23E7C /* Enums */,
 				84C1B84C2ABD30E000C45773 /* Views */,
 			);
 			path = AppDesign;
@@ -165,6 +416,7 @@
 			children = (
 				84C1B84D2ABD30EF00C45773 /* GeneralTextField.swift */,
 				84C1B85C2ABDAD4300C45773 /* GeneralButton.swift */,
+				84E169F32AC15FD300F23E7C /* LoaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +463,8 @@
 		84DD67412ABF6D6C00D2AFF3 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				84C15C8A2AC0513B0035C6AC /* Entities */,
+				84C15C6B2AC04C9C0035C6AC /* Protocols */,
 				84DD67422ABF6D7000D2AFF3 /* UseCase */,
 			);
 			path = Domain;
@@ -236,6 +490,10 @@
 				84DD67532ABF706B00D2AFF3 /* PasswordsEqualityValidationUseCase.swift */,
 				84DD67552ABF70E300D2AFF3 /* GetRegisterErrorUseCase.swift */,
 				84C15C502ABFF4450035C6AC /* SaveUserNameUseCase.swift */,
+				84C15CA02AC054350035C6AC /* GetContestsUseCase.swift */,
+				84C15CA82AC06C9F0035C6AC /* GetDateRangeUseCase.swift */,
+				84C15CAB2AC06CD70035C6AC /* GetTimeRangeUseCase.swift */,
+				84C15CAE2AC074FC0035C6AC /* GetUserNameUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -256,6 +514,14 @@
 				84DD675B2ABF730200D2AFF3 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		84E169EC2AC15A1A00F23E7C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				84E169ED2AC15A2300F23E7C /* AppConstants.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		84EF82402ABC58C400928693 /* Application */ = {
@@ -284,6 +550,7 @@
 		84EF82422ABC596300928693 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				84C15C5D2AC03C5D0035C6AC /* EventsCoordinator */,
 				84EF824B2ABC5A9800928693 /* RegisterCoordinator */,
 				84EF82482ABC59C600928693 /* AppCoordinator */,
 				84EF82432ABC599800928693 /* Coordinator.swift */,
@@ -311,6 +578,7 @@
 		84EF824E2ABC5C0300928693 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				84C15C532ABFF8760035C6AC /* EventsScreen */,
 				84EF824F2ABC5C0800928693 /* RegisterScreen */,
 			);
 			path = Scenes;
@@ -369,6 +637,8 @@
 				84EF82722ABC675A00928693 /* UIView+extra.swift */,
 				84EF82822ABC6ACE00928693 /* UIStackView+extra.swift */,
 				84C1B8582ABDAB3A00C45773 /* UIImage+resize.swift */,
+				84C15CA52AC0589A0035C6AC /* ReuseIdentifiable.swift */,
+				84E169F02AC15FB900F23E7C /* UIViewController+loader.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -421,6 +691,7 @@
 			packageProductDependencies = (
 				84EF82622ABC61A200928693 /* SnapKit */,
 				84EF82682ABC666A00928693 /* RswiftLibrary */,
+				84C15C682AC04C7D0035C6AC /* Alamofire */,
 			);
 			productName = "Shift-Lab-2023";
 			productReference = 84D57D7C2ABADF54007C9101 /* Shift-Lab-2023.app */;
@@ -453,6 +724,7 @@
 			packageReferences = (
 				84EF82612ABC61A200928693 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				84EF82672ABC666A00928693 /* XCRemoteSwiftPackageReference "R.swift" */,
+				84C15C672AC04C7D0035C6AC /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 84D57D7D2ABADF54007C9101 /* Products */;
 			projectDirPath = "";
@@ -486,40 +758,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C1B85D2ABDAD4300C45773 /* GeneralButton.swift in Sources */,
+				84C15C982AC052370035C6AC /* ContestRepositoryImpl.swift in Sources */,
 				84DD67522ABF702E00D2AFF3 /* PasswordValidationUseCase.swift in Sources */,
 				84EF825E2ABC611E00928693 /* UIViewController+error.swift in Sources */,
 				84EF824A2ABC59D400928693 /* AppCoordinator.swift in Sources */,
+				84C15C882AC051250035C6AC /* ContestRepository.swift in Sources */,
 				84DD67542ABF706B00D2AFF3 /* PasswordsEqualityValidationUseCase.swift in Sources */,
+				84C15C5F2AC03C690035C6AC /* EventsCoordinator.swift in Sources */,
+				84C15C832AC04E8C0035C6AC /* URLFactory.swift in Sources */,
 				84EF82552ABC5CD200928693 /* RegisterScreenViewModel.swift in Sources */,
 				84C1B8602ABEE40B00C45773 /* DatePickerFieldView.swift in Sources */,
+				84C15C9F2AC053930035C6AC /* NetworkServiceProvider.swift in Sources */,
 				84DD674F2ABF700C00D2AFF3 /* SurnameValidationUseCase.swift in Sources */,
 				84C15C4A2ABFF22F0035C6AC /* UserInfoStorage.swift in Sources */,
 				84EF82442ABC599800928693 /* Coordinator.swift in Sources */,
 				84EF827F2ABC685500928693 /* AppFonts.swift in Sources */,
+				84C15C572ABFF8A30035C6AC /* EventsScreenViewModel.swift in Sources */,
 				84EF82832ABC6ACE00928693 /* UIStackView+extra.swift in Sources */,
+				84C15C782AC04DD40035C6AC /* ContestServiceImpl.swift in Sources */,
 				84EF82582ABC5D5800928693 /* Dynamic.swift in Sources */,
 				84C15C4E2ABFF33C0035C6AC /* StorageKey.swift in Sources */,
+				84C15CA12AC054350035C6AC /* GetContestsUseCase.swift in Sources */,
 				84EF82472ABC59AF00928693 /* BaseNavigationCoordinator.swift in Sources */,
 				84C1B8592ABDAB3A00C45773 /* UIImage+resize.swift in Sources */,
+				84C15C5B2ABFF9960035C6AC /* EventsScreenView.swift in Sources */,
 				84DD67442ABF6D7B00D2AFF3 /* UseCaseProvider.swift in Sources */,
+				84C15C932AC0519E0035C6AC /* ContestMapper.swift in Sources */,
+				84C15C6E2AC04CB40035C6AC /* ContestService.swift in Sources */,
+				84C15C902AC051750035C6AC /* Mapper.swift in Sources */,
 				84EF824D2ABC5AA400928693 /* RegisterCoordinator.swift in Sources */,
 				84DD67562ABF70E300D2AFF3 /* GetRegisterErrorUseCase.swift in Sources */,
+				84C15C8D2AC0514C0035C6AC /* ContestDomain.swift in Sources */,
 				84D57D802ABADF54007C9101 /* AppDelegate.swift in Sources */,
 				84DD67482ABF6DAD00D2AFF3 /* ConvertDateToStringUseCase.swift in Sources */,
 				84C15C512ABFF4450035C6AC /* SaveUserNameUseCase.swift in Sources */,
 				84EF82512ABC5C6A00928693 /* RegisterScreenSceneDelegate.swift in Sources */,
 				84C15C4C2ABFF29F0035C6AC /* UserInfoStorageImpl.swift in Sources */,
 				84EF82732ABC675A00928693 /* UIView+extra.swift in Sources */,
+				84C15CAF2AC074FD0035C6AC /* GetUserNameUseCase.swift in Sources */,
 				84D57D822ABADF54007C9101 /* SceneDelegate.swift in Sources */,
 				84EF825A2ABC5EB900928693 /* RegisterScreenViewController.swift in Sources */,
 				84DD674D2ABF6FE600D2AFF3 /* NameValidationUseCase.swift in Sources */,
+				84E169F42AC15FD300F23E7C /* LoaderView.swift in Sources */,
 				84C1B8522ABD358300C45773 /* RegisterInfoStackView.swift in Sources */,
+				84C15C622AC03CC60035C6AC /* EventsScreenAssembly.swift in Sources */,
+				84C15CA62AC0589A0035C6AC /* ReuseIdentifiable.swift in Sources */,
+				84C15C592ABFF95C0035C6AC /* EventsScreenViewController.swift in Sources */,
+				84E169EE2AC15A2300F23E7C /* AppConstants.swift in Sources */,
 				84EF82702ABC66F100928693 /* AppColors.swift in Sources */,
 				84EF82652ABC637900928693 /* RegisterScreenAssembly.swift in Sources */,
 				84C15C472ABFF1BE0035C6AC /* PersistentStorageProvider.swift in Sources */,
 				84DD674A2ABF6F8B00D2AFF3 /* EmptyFieldValidationUseCase.swift in Sources */,
+				84C15C9B2AC0534D0035C6AC /* RepositoryProvider.swift in Sources */,
+				84C15C7C2AC04E230035C6AC /* NetworkServiceError.swift in Sources */,
+				84C15C802AC04E5E0035C6AC /* HTTPStatusCode.swift in Sources */,
+				84C15C7E2AC04E370035C6AC /* BaseNetworkService.swift in Sources */,
+				84E169F12AC15FB900F23E7C /* UIViewController+loader.swift in Sources */,
+				84C15C652AC043370035C6AC /* ContestsTableViewCell.swift in Sources */,
 				84DD673D2ABF587800D2AFF3 /* Optional+extra.swift in Sources */,
 				84C1B84E2ABD30EF00C45773 /* GeneralTextField.swift in Sources */,
+				84C15CA92AC06C9F0035C6AC /* GetDateRangeUseCase.swift in Sources */,
+				84C15CAC2AC06CD70035C6AC /* GetTimeRangeUseCase.swift in Sources */,
+				84C15C732AC04D210035C6AC /* ContestResponse.swift in Sources */,
 				84C1B8552ABD412C00C45773 /* UserInfoSectionStackView.swift in Sources */,
 				84EF82602ABC617200928693 /* RegisterScreenView.swift in Sources */,
 			);
@@ -740,6 +1040,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		84C15C672AC04C7D0035C6AC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		84EF82612ABC61A200928693 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -759,6 +1067,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		84C15C682AC04C7D0035C6AC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84C15C672AC04C7D0035C6AC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		84EF82622ABC61A200928693 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 84EF82612ABC61A200928693 /* XCRemoteSwiftPackageReference "SnapKit" */;

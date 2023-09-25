@@ -18,7 +18,8 @@ final class AppCoordinator: BaseNavigationCoordinator {
     // MARK: - Start
 
     override func start() {
-        startRegisterFlow()
+//        startRegisterFlow()
+        startEventsFlow()
     }
 
     // MARK: - Private Methods
@@ -26,16 +27,19 @@ final class AppCoordinator: BaseNavigationCoordinator {
     private func startRegisterFlow() {
         let coordinator = RegisterCoordinator(navigationController: navigationController)
 
-        coordinator.onRouteToMainFlow = { [weak self] registerCoordinator in
+        coordinator.onRouteToEventsFlow = { [weak self] registerCoordinator in
             self?.remove(child: registerCoordinator)
-            self?.startMainFlow()
+            self?.startEventsFlow()
         }
         add(child: coordinator)
         coordinator.start()
     }
 
-    private func startMainFlow() {
+    private func startEventsFlow() {
+        let coordinator = EventsCoordinator(navigationController: navigationController)
 
+        add(child: coordinator)
+        coordinator.start()
     }
 
 }

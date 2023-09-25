@@ -29,14 +29,14 @@ final class RegisterScreenView: UIView {
     }(UIStackView())
 
     private let createAccountLabel: UILabel = {
-        $0.text = "Создайте Аккаунт"
+        $0.text = R.string.localizable.create_account()
         $0.font = AppFonts.poppins21Semibold
         $0.textColor = AppColors.black
         return $0
     }(UILabel())
 
     private let registerPhraseLabel: UILabel = {
-        $0.text = "Участвуйте в конкурсах, которых хотите!"
+        $0.text = R.string.localizable.participate_in_contests()
         $0.textColor = AppColors.gray
         $0.font = AppFonts.poppins14Regular
         return $0
@@ -48,7 +48,7 @@ final class RegisterScreenView: UIView {
 
     private lazy var registerButton: GeneralButton = {
         $0.configureGreenFilledButton()
-        $0.setTitle("Зарегистрироваться", for: .normal, font: AppFonts.poppins14Regular)
+        $0.setTitle(R.string.localizable.register_button(), for: .normal, font: AppFonts.poppins14Regular)
         return $0
     }(GeneralButton(type: .system))
 
@@ -111,8 +111,8 @@ final class RegisterScreenView: UIView {
 
     private func configureConstraints() {
         scrollView.snp.makeConstraints { make in
-            make.top.equalTo(safeAreaLayoutGuide)
-            make.horizontalEdges.bottom.equalToSuperview()
+            make.top.bottom.equalTo(safeAreaLayoutGuide)
+            make.horizontalEdges.equalToSuperview()
         }
 
         contentView.snp.makeConstraints { make in
@@ -122,20 +122,20 @@ final class RegisterScreenView: UIView {
         }
 
         registerHeaderStackView.snp.makeConstraints { make in
-            make.horizontalEdges.equalToSuperview().inset(20)
-            make.top.equalToSuperview().offset(30)
+            make.horizontalEdges.equalToSuperview().inset(AppConstants.spacingLarge)
+            make.top.equalToSuperview().offset(Constants.registerHeaderStackViewTopOffset)
         }
 
         registerInfoStackView.snp.makeConstraints { make in
-            make.top.equalTo(registerHeaderStackView.snp.bottom).offset(40)
-            make.horizontalEdges.equalToSuperview().inset(20)
-            make.bottom.lessThanOrEqualTo(registerButton.snp.top).offset(-20)
+            make.top.equalTo(registerHeaderStackView.snp.bottom).offset(Constants.registerInfoStackViewTopOffset)
+            make.horizontalEdges.equalToSuperview().inset(AppConstants.spacingLarge)
+            make.bottom.lessThanOrEqualTo(registerButton.snp.top).offset(-AppConstants.spacingLarge)
         }
 
         registerButton.snp.makeConstraints { make in
-            make.top.greaterThanOrEqualTo(registerInfoStackView.snp.bottom).offset(20)
-            make.bottom.equalTo(safeAreaLayoutGuide.snp.bottom).offset(-20)
-            make.horizontalEdges.equalToSuperview().inset(20)
+            make.top.greaterThanOrEqualTo(registerInfoStackView.snp.bottom).offset(AppConstants.spacingLarge)
+            make.bottom.equalToSuperview().offset(-AppConstants.spacingLarge)
+            make.horizontalEdges.equalToSuperview().inset(AppConstants.spacingLarge)
         }
     }
 
@@ -191,7 +191,7 @@ final class RegisterScreenView: UIView {
             scrollView.contentInset = UIEdgeInsets(
                 top: 0,
                 left: 0,
-                bottom: keyboardSize.height + 20,
+                bottom: keyboardSize.height + AppConstants.spacingLarge,
                 right: 0
             )
         }
@@ -199,12 +199,7 @@ final class RegisterScreenView: UIView {
 
     @objc
     private func keyboardWillHide(_ notification: NSNotification) {
-        scrollView.contentInset = UIEdgeInsets(
-            top: 0,
-            left: 0,
-            bottom: 0,
-            right: 0
-        )
+        scrollView.contentInset = UIEdgeInsets.zero
     }
 
     // MARK: - Deinit
@@ -213,4 +208,14 @@ final class RegisterScreenView: UIView {
         NotificationCenter.default.removeObserver(self)
     }
 
+}
+
+// MARK: - Constants
+
+private extension RegisterScreenView {
+    enum Constants {
+        static let registerHeaderStackViewTopOffset = 30
+        static let registerInfoStackViewTopOffset = 24
+        
+    }
 }

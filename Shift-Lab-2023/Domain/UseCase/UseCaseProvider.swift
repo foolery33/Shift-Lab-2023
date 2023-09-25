@@ -19,6 +19,12 @@ final class UseCaseProvider {
 
     private let persistentStorageProvider: PersistentStorageProvider = .init()
 
+    private lazy var repositoryProvider: RepositoryProvider = .init(
+        networkServiceProvider: networkServiceProvider
+    )
+
+    private let networkServiceProvider: NetworkServiceProvider = .init()
+
     // MARK: - Instances
 
     public lazy var convertDateToStringUseCase: ConvertDateToStringUseCase = {
@@ -56,6 +62,22 @@ final class UseCaseProvider {
     }()
 
     public lazy var saveUserNameUseCase: SaveUserNameUseCase = {
+        .init(userInfoStorage: persistentStorageProvider.userInfoStorage)
+    }()
+
+    public lazy var getContestsUseCase: GetContestsUseCase = {
+        .init(contestRepository: repositoryProvider.contestRepository)
+    }()
+
+    public lazy var getDateFromStringUseCase: GetDateFromStringUseCase = {
+        .init()
+    }()
+
+    public lazy var getTimeRangeUseCase: GetTimeRangeUseCase = {
+        .init()
+    }()
+
+    public lazy var getUserNameUseCase: GetUserNameUseCase = {
         .init(userInfoStorage: persistentStorageProvider.userInfoStorage)
     }()
 
