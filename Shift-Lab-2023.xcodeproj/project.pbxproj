@@ -46,7 +46,6 @@
 		84C1B8602ABEE40B00C45773 /* DatePickerFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1B85F2ABEE40B00C45773 /* DatePickerFieldView.swift */; };
 		84D57D802ABADF54007C9101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D57D7F2ABADF54007C9101 /* AppDelegate.swift */; };
 		84D57D822ABADF54007C9101 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D57D812ABADF54007C9101 /* SceneDelegate.swift */; };
-		84D57D892ABADF55007C9101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D57D882ABADF55007C9101 /* Assets.xcassets */; };
 		84D57D8C2ABADF55007C9101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D57D8A2ABADF55007C9101 /* LaunchScreen.storyboard */; };
 		84DD673D2ABF587800D2AFF3 /* Optional+extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD673C2ABF587800D2AFF3 /* Optional+extra.swift */; };
 		84DD67442ABF6D7B00D2AFF3 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD67432ABF6D7B00D2AFF3 /* UseCaseProvider.swift */; };
@@ -124,7 +123,6 @@
 		84D57D7C2ABADF54007C9101 /* Shift-Lab-2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shift-Lab-2023.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D57D7F2ABADF54007C9101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D57D812ABADF54007C9101 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84D57D882ABADF55007C9101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D57D8B2ABADF55007C9101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D57D8D2ABADF55007C9101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84DD673C2ABF587800D2AFF3 /* Optional+extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+extra.swift"; sourceTree = "<group>"; };
@@ -455,7 +453,6 @@
 				84EF82412ABC595A00928693 /* Presentation */,
 				84EF825B2ABC610200928693 /* Extensions */,
 				84EF82402ABC58C400928693 /* Application */,
-				84D57D882ABADF55007C9101 /* Assets.xcassets */,
 			);
 			path = "Shift-Lab-2023";
 			sourceTree = "<group>";
@@ -745,7 +742,6 @@
 				84EF827A2ABC683600928693 /* Poppins-Medium.ttf in Resources */,
 				84DD675C2ABF730200D2AFF3 /* Localizable.strings in Resources */,
 				84EF827C2ABC683600928693 /* Poppins-Regular.ttf in Resources */,
-				84D57D892ABADF55007C9101 /* Assets.xcassets in Resources */,
 				84EF826E2ABC66EB00928693 /* AppColors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
