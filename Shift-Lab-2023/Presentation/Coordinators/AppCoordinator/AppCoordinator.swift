@@ -18,8 +18,11 @@ final class AppCoordinator: BaseNavigationCoordinator {
     // MARK: - Start
 
     override func start() {
-//        startRegisterFlow()
-        startEventsFlow()
+        if UserDefaults.standard.string(forKey: "name") != nil {
+            startEventsFlow()
+        } else {
+            startRegisterFlow()
+        }
     }
 
     // MARK: - Private Methods
