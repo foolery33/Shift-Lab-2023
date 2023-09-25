@@ -1,0 +1,50 @@
+/* 
+  Localizable.strings
+  Shift-Lab-2023
+
+  Created by Nikita Usov on 24.09.2023.
+  
+*/
+
+// MARK: - RegisterScreen
+
+"create_account" = "Создайте Аккаунт";
+"participate_in_contests" = "Участвуйте в конкурсах, которых хотите!";
+
+"section_name" = "Имя";
+"section_name_placeholder" = "Введите ваше имя";
+
+"section_surname" = "Фамилия";
+"section_surname_placeholder" = "Введите вашу фамилию";
+
+"section_date_of_birth" = "Дата рождения";
+"section_date_of_birth_placeholder" = "Выберите дату рождения";
+
+"section_password" = "Пароль";
+"section_password_placeholder" = "Введите ваш пароль";
+
+"section_confirm_password" = "Подтвердите пароль";
+"section_confirm_password_placeholder" = "Введите ваш пароль повторно";
+
+"register_button" = "Зарегистрироваться";
+
+// MARK: - EventsScreen
+
+"recommended_contests" = "Рекомендуемые контесты";
+"greeting" = "Приветствие";
+"hello" = "Привет";
+"greet_user" = "Привет, %@.\nСпасибо, что пользуетесь нашим приложением";
+
+// MARK: - Errors
+"name_validation_error" = "Имя должно начинаться с заглавной буквы, состоять только из кириллических или только латинских символов и содержать не менее двух символов";
+"surname_validation_error" = "Фамилия должна начинаться с заглавной буквы, состоять только из кириллических или только латинских символов и содержать не менее двух символов";
+"password_validation_error" = "Пароль должен состоять только из латинских букв и цифр и содержать минимум: одну заглавную букву, одну строчную букву, одну цифру";
+"password_equality_error" = "Пароли не совпадают. Пожалуйста убедитесь в том, что вы ввели одинаковые пароли";
+"empty_field_error" = "Пожалуйста, убедитесь, что вы ввели все данные для регистрации";
+
+"register_error" = "Ошибка при регистрации";
+"contests_loading_error" = "Ошибка загрузки контестов";
+
+// MARK: - Common
+
+"ok" = "ОК";
